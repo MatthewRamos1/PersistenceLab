@@ -1,20 +1,19 @@
 //
-//  ViewController.swift
+//  DetailViewController.swift
 //  PersistenceLab
 //
-//  Created by Matthew Ramos on 1/20/20.
+//  Created by Matthew Ramos on 1/21/20.
 //  Copyright © 2020 Matthew Ramos. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class DetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-     
-    }
 
+    }
+    
 
 }
-
