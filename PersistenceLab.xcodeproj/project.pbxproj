@@ -18,6 +18,8 @@
 		0C540D6B23D7AB7100358403 /* FavoritesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C540D6A23D7AB7100358403 /* FavoritesListViewController.swift */; };
 		0C540D6D23D7AF3400358403 /* PicturesAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C540D6C23D7AF3400358403 /* PicturesAPIClient.swift */; };
 		0C540D6F23D7B12300358403 /* PictureData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C540D6E23D7B12300358403 /* PictureData.swift */; };
+		0C540D7123D8F0A300358403 /* ViewController + Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C540D7023D8F0A300358403 /* ViewController + Alerts.swift */; };
+		0C540D7523D8FE9C00358403 /* PictureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C540D7423D8FE9C00358403 /* PictureCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		0C540D6A23D7AB7100358403 /* FavoritesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListViewController.swift; sourceTree = "<group>"; };
 		0C540D6C23D7AF3400358403 /* PicturesAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicturesAPIClient.swift; sourceTree = "<group>"; };
 		0C540D6E23D7B12300358403 /* PictureData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureData.swift; sourceTree = "<group>"; };
+		0C540D7023D8F0A300358403 /* ViewController + Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController + Alerts.swift"; sourceTree = "<group>"; };
+		0C540D7423D8FE9C00358403 /* PictureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,7 @@
 				0C540D5323D696AA00358403 /* SceneDelegate.swift */,
 				0C540D6C23D7AF3400358403 /* PicturesAPIClient.swift */,
 				0C540D6E23D7B12300358403 /* PictureData.swift */,
+				0C540D7423D8FE9C00358403 /* PictureCell.swift */,
 				0C540D6823D7AB4D00358403 /* DetailViewController.swift */,
 				0C540D5523D696AA00358403 /* ViewController.swift */,
 				0C540D5723D696AA00358403 /* Main.storyboard */,
@@ -77,6 +82,7 @@
 				0C540D5A23D696AD00358403 /* Assets.xcassets */,
 				0C540D5C23D696AD00358403 /* LaunchScreen.storyboard */,
 				0C540D5F23D696AD00358403 /* Info.plist */,
+				0C540D7023D8F0A300358403 /* ViewController + Alerts.swift */,
 			);
 			path = PersistenceLab;
 			sourceTree = "<group>";
@@ -163,6 +169,8 @@
 				0C540D5623D696AA00358403 /* ViewController.swift in Sources */,
 				0C540D6D23D7AF3400358403 /* PicturesAPIClient.swift in Sources */,
 				0C540D5223D696AA00358403 /* AppDelegate.swift in Sources */,
+				0C540D7523D8FE9C00358403 /* PictureCell.swift in Sources */,
+				0C540D7123D8F0A300358403 /* ViewController + Alerts.swift in Sources */,
 				0C540D5423D696AA00358403 /* SceneDelegate.swift in Sources */,
 				0C540D6923D7AB4D00358403 /* DetailViewController.swift in Sources */,
 			);

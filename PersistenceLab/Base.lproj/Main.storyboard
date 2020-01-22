@@ -24,19 +24,34 @@
                                 <rect key="frame" x="0.0" y="196" width="414" height="617"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mfv-4R-V2l">
-                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="itemSize" width="207" height="183"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="WV4-Sb-XJn">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="pictureCell" id="WV4-Sb-XJn" customClass="PictureCell" customModule="PersistenceLab" customModuleProvider="target">
+                                        <rect key="frame" x="103.5" y="0.0" width="207" height="183"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="5UO-Kp-ccl">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="207" height="183"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fsd-Kq-TNy">
+                                                    <rect key="frame" x="0.0" y="0.0" width="207" height="183"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="fsd-Kq-TNy" firstAttribute="top" secondItem="5UO-Kp-ccl" secondAttribute="top" id="1ks-8w-ngV"/>
+                                                <constraint firstItem="fsd-Kq-TNy" firstAttribute="leading" secondItem="5UO-Kp-ccl" secondAttribute="leading" id="rEP-Zx-wTy"/>
+                                                <constraint firstAttribute="trailing" secondItem="fsd-Kq-TNy" secondAttribute="trailing" id="yFz-Ds-LUM"/>
+                                                <constraint firstAttribute="bottom" secondItem="fsd-Kq-TNy" secondAttribute="bottom" id="yuA-2s-ZfE"/>
+                                            </constraints>
                                         </collectionViewCellContentView>
+                                        <size key="customSize" width="207" height="183"/>
+                                        <connections>
+                                            <outlet property="imageView" destination="fsd-Kq-TNy" id="OWk-fV-n4L"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -54,6 +69,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Pictures" id="1bm-e2-Q24"/>
+                    <connections>
+                        <outlet property="collectionView" destination="HuD-aC-qrI" id="qd6-FH-fhr"/>
+                        <outlet property="searchBar" destination="oi3-K2-5k8" id="Ugl-uh-nIr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

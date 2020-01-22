@@ -8,6 +8,10 @@
 
 import Foundation
 
-struct Picture {
-    
+struct PictureData: Codable {
+    let hits: [Picture]
+}
+
+struct Picture: Codable {
+    let largeImageURL: String
 }
