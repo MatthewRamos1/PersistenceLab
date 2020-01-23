@@ -10,8 +10,8 @@ import Foundation
 import NetworkHelper
 
 struct PicturesAPIClient {
-    static func fetchPictures (completion: @escaping (Result<[Picture], AppError>) -> ()) {
-        let endPointURL = "https://pixabay.com/api/?key=14980906-543f47e356fbfc99d3efe2dfe&q="
+    static func fetchPictures (query: String, completion: @escaping (Result<[Picture], AppError>) -> ()) {
+        let endPointURL = "https://pixabay.com/api/?key=14980906-543f47e356fbfc99d3efe2dfe&q=\(query)"
         guard let url = URL(string: endPointURL) else {
             completion(.failure(.badURL(endPointURL)))
             return
@@ -23,8 +23,9 @@ struct PicturesAPIClient {
                         completion(.failure(.networkClientError(appError)))
                     case .success(let data):
                         do {
-                            let results = try JSONDecoder().decode([Picture].self, from: data)
-                            completion(.success(results))
+                            let results = try JSONDecoder().decode(PictureData.self, from: data)
+                            let pictures = results.hits
+                            completion(.success(pictures))
                         } catch {
                             completion(.failure(.decodingError(error)))
                         }

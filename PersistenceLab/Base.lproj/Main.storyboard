@@ -37,20 +37,16 @@
                                             <rect key="frame" x="0.0" y="0.0" width="207" height="183"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fsd-Kq-TNy">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fsd-Kq-TNy">
                                                     <rect key="frame" x="0.0" y="0.0" width="207" height="183"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="fsd-Kq-TNy" firstAttribute="top" secondItem="5UO-Kp-ccl" secondAttribute="top" id="1ks-8w-ngV"/>
-                                                <constraint firstItem="fsd-Kq-TNy" firstAttribute="leading" secondItem="5UO-Kp-ccl" secondAttribute="leading" id="rEP-Zx-wTy"/>
-                                                <constraint firstAttribute="trailing" secondItem="fsd-Kq-TNy" secondAttribute="trailing" id="yFz-Ds-LUM"/>
-                                                <constraint firstAttribute="bottom" secondItem="fsd-Kq-TNy" secondAttribute="bottom" id="yuA-2s-ZfE"/>
-                                            </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="207" height="183"/>
                                         <connections>
                                             <outlet property="imageView" destination="fsd-Kq-TNy" id="OWk-fV-n4L"/>
+                                            <segue destination="ugi-sa-iRP" kind="show" id="bvC-KS-scj"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -85,14 +81,25 @@
                     <view key="view" contentMode="scaleToFill" id="u16-ro-Gd0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EKH-ZU-y9P">
+                                <rect key="frame" x="0.0" y="140" width="414" height="363"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="EKH-ZU-y9P" firstAttribute="top" secondItem="MoX-BL-Qvw" secondAttribute="top" id="DVv-Ch-MLp"/>
+                            <constraint firstItem="MoX-BL-Qvw" firstAttribute="bottom" secondItem="EKH-ZU-y9P" secondAttribute="bottom" constant="310" id="aPK-ma-Q7u"/>
+                            <constraint firstItem="EKH-ZU-y9P" firstAttribute="leading" secondItem="MoX-BL-Qvw" secondAttribute="leading" id="t3y-mZ-UHB"/>
+                            <constraint firstItem="EKH-ZU-y9P" firstAttribute="trailing" secondItem="MoX-BL-Qvw" secondAttribute="trailing" id="ygY-iG-cQL"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="MoX-BL-Qvw"/>
                     </view>
                     <navigationItem key="navigationItem" id="nzw-Gn-0Ci"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LdN-gc-ANb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2806" y="125"/>
+            <point key="canvasLocation" x="2805.7971014492755" y="124.55357142857142"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="3Om-mP-Tek">
@@ -100,6 +107,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="t6b-yK-xjA" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lGD-9y-T4z">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -124,7 +132,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="syD-s7-ueR">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="favoriteCell" id="syD-s7-ueR">
                                         <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="syD-s7-ueR" id="Hde-mH-L9E">
@@ -160,14 +168,25 @@
                     <view key="view" contentMode="scaleToFill" id="2Je-pz-C6R">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2RW-5B-Bvh">
+                                <rect key="frame" x="0.0" y="140" width="414" height="363"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="K2c-oc-rDA" firstAttribute="bottom" secondItem="2RW-5B-Bvh" secondAttribute="bottom" constant="310" id="6Mr-bX-ZuZ"/>
+                            <constraint firstItem="2RW-5B-Bvh" firstAttribute="trailing" secondItem="K2c-oc-rDA" secondAttribute="trailing" id="9k3-J2-dkF"/>
+                            <constraint firstItem="2RW-5B-Bvh" firstAttribute="leading" secondItem="K2c-oc-rDA" secondAttribute="leading" id="BkL-cu-Z4s"/>
+                            <constraint firstItem="2RW-5B-Bvh" firstAttribute="top" secondItem="K2c-oc-rDA" secondAttribute="top" id="rpl-o6-Aec"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="K2c-oc-rDA"/>
                     </view>
                     <navigationItem key="navigationItem" id="6Xu-22-7ZZ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iII-fV-cGM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2807" y="826"/>
+            <point key="canvasLocation" x="2805.7971014492755" y="825.66964285714278"/>
         </scene>
         <!--Photos-->
         <scene sceneID="Eb9-cG-c8e">
