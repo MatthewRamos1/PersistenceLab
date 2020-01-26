@@ -7,16 +7,20 @@
 //
 
 import UIKit
+import DataPersistence
 
 class DetailViewController: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
     
     var picture: Picture?
+    
+    let dataPersistence = DataPersistence<Picture>()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
+   
 
     }
     
@@ -37,5 +41,12 @@ class DetailViewController: UIViewController {
             }
         }
     }
+    
+    @IBAction func addFavoritePressed(_ sender: UIBarButtonItem) {
+        dataPersistence.save(item: picture!)
+        showAlert(title: "Save Successful", message: "Image has been saved to favorites")
+
+    }
+    
 
 }

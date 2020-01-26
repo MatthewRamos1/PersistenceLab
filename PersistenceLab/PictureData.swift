@@ -8,10 +8,12 @@
 
 import Foundation
 
-struct PictureData: Codable {
+typealias Writable = Codable & Equatable
+
+struct PictureData: Writable {
     let hits: [Picture]
 }
 
-struct Picture: Codable {
+struct Picture: Writable {
     let largeImageURL: String
 }

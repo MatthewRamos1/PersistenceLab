@@ -96,7 +96,11 @@
                         <viewLayoutGuide key="safeArea" id="MoX-BL-Qvw"/>
                     </view>
                     <navigationItem key="navigationItem" id="nzw-Gn-0Ci">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="qBb-wD-3V5" userLabel="Add Favorite"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="qBb-wD-3V5" userLabel="Add Favorite">
+                            <connections>
+                                <action selector="addFavoritePressed:" destination="ugi-sa-iRP" id="ELB-Bk-XSP"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="imageView" destination="EKH-ZU-y9P" id="kgu-GW-2MN"/>
@@ -128,7 +132,7 @@
         <!--Favorites-->
         <scene sceneID="Fvx-y1-wxa">
             <objects>
-                <viewController id="dr8-SQ-4Xy" sceneMemberID="viewController">
+                <viewController id="dr8-SQ-4Xy" customClass="FavoritesListViewController" customModule="PersistenceLab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="neG-vT-lJR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -166,10 +170,10 @@
             </objects>
             <point key="canvasLocation" x="1957.9710144927537" y="825.66964285714278"/>
         </scene>
-        <!--View Controller-->
+        <!--Favorites Detail View Controller-->
         <scene sceneID="1XJ-St-ozd">
             <objects>
-                <viewController id="mbs-i5-tXH" sceneMemberID="viewController">
+                <viewController id="mbs-i5-tXH" customClass="FavoritesDetailViewController" customModule="PersistenceLab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2Je-pz-C6R">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
