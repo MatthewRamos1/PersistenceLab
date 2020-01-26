@@ -74,10 +74,10 @@
             </objects>
             <point key="canvasLocation" x="1957.9710144927537" y="124.55357142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="YQo-rN-QGd">
             <objects>
-                <viewController id="ugi-sa-iRP" sceneMemberID="viewController">
+                <viewController id="ugi-sa-iRP" customClass="DetailViewController" customModule="PersistenceLab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="u16-ro-Gd0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -95,7 +95,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="MoX-BL-Qvw"/>
                     </view>
-                    <navigationItem key="navigationItem" id="nzw-Gn-0Ci"/>
+                    <navigationItem key="navigationItem" id="nzw-Gn-0Ci">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="qBb-wD-3V5" userLabel="Add Favorite"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageView" destination="EKH-ZU-y9P" id="kgu-GW-2MN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LdN-gc-ANb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -230,5 +235,6 @@
     <resources>
         <image name="heart.fill" catalog="system" width="64" height="54"/>
         <image name="photo.fill.on.rectangle.fill" catalog="system" width="64" height="48"/>
+        <image name="plus" catalog="system" width="64" height="56"/>
     </resources>
 </document>

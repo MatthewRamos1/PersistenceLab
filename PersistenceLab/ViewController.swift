@@ -31,6 +31,14 @@ class ViewController: UIViewController {
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let detailVC = segue.destination as? DetailViewController, let indexPath = collectionView.indexPath(for: (sender as! PictureCell)) else {
+            fatalError("Error: Check prepare for segue")
+        }
+        detailVC.picture = pictures[indexPath.row]
+        
+    }
+    
     func getPictures(query: String) {
         PicturesAPIClient.fetchPictures(query: query) { [weak self] (result) in
             switch result {
