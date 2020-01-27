@@ -217,6 +217,9 @@
                         <viewLayoutGuide key="safeArea" id="K2c-oc-rDA"/>
                     </view>
                     <navigationItem key="navigationItem" id="6Xu-22-7ZZ"/>
+                    <connections>
+                        <outlet property="favoritesImageView" destination="2RW-5B-Bvh" id="sCq-J3-Fwq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iII-fV-cGM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

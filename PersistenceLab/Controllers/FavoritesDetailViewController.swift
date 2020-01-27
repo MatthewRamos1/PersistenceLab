@@ -10,6 +10,9 @@ import UIKit
 
 class FavoritesDetailViewController: UIViewController {
 
+    @IBOutlet weak var favoritesImageView: UIImageView!
+    var picture: Picture?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
