@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0C51776523DE3F8A00DCBD4B /* FavoritesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C51776423DE3F8A00DCBD4B /* FavoritesListViewController.swift */; };
 		0C51776723DE3FC900DCBD4B /* FavoritesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C51776623DE3FC900DCBD4B /* FavoritesDetailViewController.swift */; };
+		0C51776923DE957F00DCBD4B /* FavoritesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C51776823DE957F00DCBD4B /* FavoritesCell.swift */; };
 		0C540D5223D696AA00358403 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C540D5123D696AA00358403 /* AppDelegate.swift */; };
 		0C540D5423D696AA00358403 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C540D5323D696AA00358403 /* SceneDelegate.swift */; };
 		0C540D5623D696AA00358403 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C540D5523D696AA00358403 /* ViewController.swift */; };
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		0C51776423DE3F8A00DCBD4B /* FavoritesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListViewController.swift; sourceTree = "<group>"; };
 		0C51776623DE3FC900DCBD4B /* FavoritesDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesDetailViewController.swift; sourceTree = "<group>"; };
+		0C51776823DE957F00DCBD4B /* FavoritesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCell.swift; sourceTree = "<group>"; };
 		0C540D4E23D696AA00358403 /* PersistenceLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersistenceLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C540D5123D696AA00358403 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C540D5323D696AA00358403 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				0C540D6E23D7B12300358403 /* PictureData.swift */,
 				0C540D7423D8FE9C00358403 /* PictureCell.swift */,
 				0C540D5723D696AA00358403 /* Main.storyboard */,
+				0C51776823DE957F00DCBD4B /* FavoritesCell.swift */,
 				0C540D5A23D696AD00358403 /* Assets.xcassets */,
 				0C540D5C23D696AD00358403 /* LaunchScreen.storyboard */,
 				0C540D5F23D696AD00358403 /* Info.plist */,
@@ -185,6 +188,7 @@
 				0C540D5423D696AA00358403 /* SceneDelegate.swift in Sources */,
 				0C540D6923D7AB4D00358403 /* DetailViewController.swift in Sources */,
 				0C51776723DE3FC900DCBD4B /* FavoritesDetailViewController.swift in Sources */,
+				0C51776923DE957F00DCBD4B /* FavoritesCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
